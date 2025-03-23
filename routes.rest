@@ -1,0 +1,7 @@
+### Test Get All Contacts
+GET http://localhost:3000/contacts
+Content-Type: application/json
+
+### Test Get a Single Contact (replace `:id` with an actual ID)
+GET http://localhost:3000/contacts/:id
+Content-Type: application/json
