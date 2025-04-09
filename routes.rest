@@ -1,7 +1,41 @@
 ### Test Get All Contacts
-GET http://localhost:3000/contacts
+GET http://localhost:3000/api/contacts
 Content-Type: application/json
 
+
 ### Test Get a Single Contact (replace `:id` with an actual ID)
-GET http://localhost:3000/contacts/:id
+GET http://localhost:3000/api/contacts/6613cd49e4e0a413c1234567
+Content-Type: application/json
+
+
+### Create a new contact
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Bright",
+  "lastName": "Owusu",
+  "email": "bright.owusu@example.com",
+  "phone": "+233541234567",
+  "favoriteColor": "Blue",
+  "birthday": "1995-06-15"
+}
+
+
+### Update a contact (replace with an actual ID)
+PUT http://localhost:3000/api/contacts/6613cd49e4e0a413c1234567
+Content-Type: application/json
+
+{
+  "firstName": "Bright",
+  "lastName": "Owusu",
+  "email": "bright.updated@example.com",
+  "phone": "+233507654321",
+  "favoriteColor": "Green",
+  "birthday": "1995-06-15"
+}
+
+
+### Delete a contact (replace with an actual ID)
+DELETE http://localhost:3000/api/contacts/6613cd49e4e0a413c1234567
 Content-Type: application/json
