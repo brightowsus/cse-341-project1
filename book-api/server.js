@@ -27,7 +27,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "http://localhost:3000",
+        url: "https://cse-341-project1-1-h0w2.onrender.com",
       },
     ],
   },
@@ -50,3 +50,12 @@ mongoose
   .catch((err) => {
     console.error("❌ MongoDB connection failed:", err.message);
   });
+
+
+  // Make sure the MONGO_URI is correctly referenced
+const mongoURI = process.env.MONGO_URI;
+
+if (!mongoURI) {
+  console.error('MongoDB URI is not defined!');
+  process.exit(1); // Exit the app if the MongoDB URI is not found
+}
