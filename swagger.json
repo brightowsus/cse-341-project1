@@ -5,7 +5,7 @@
     "description": "API to manage contacts",
     "version": "1.0.0"
   },
-  "host": "https://cse-341-project1-acas.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
     "http",
@@ -16,7 +16,7 @@
       "get": {
         "description": "",
         "responses": {
-          "hello world": {
+          "200": {
             "description": "OK"
           }
         }

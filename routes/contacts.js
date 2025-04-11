@@ -43,9 +43,17 @@ router.get('/:id', contactsController.getSingle);
  *           schema:
  *             type: object
  *             properties:
- *               name:
+ *               firstName:
+ *                 type: string
+ *               lastName:
  *                 type: string
  *               email:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               favoriteColor:
+ *                 type: string
+ *               birthday:
  *                 type: string
  *     responses:
  *       201:
@@ -71,9 +79,17 @@ router.post('/', contactsController.createUser);
  *           schema:
  *             type: object
  *             properties:
- *               name:
+ *               firstName:
+ *                 type: string
+ *               lastName:
  *                 type: string
  *               email:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               favoriteColor:
+ *                 type: string
+ *               birthday:
  *                 type: string
  *     responses:
  *       200:
